@@ -1,0 +1,23 @@
+   <!-- Sidebar -->
+
+    <aside class="large-3 columns">
+    <ul class="side-nav">
+      <!-- {% include categories.html %} -->
+
+<h5>{{ page.categories | capitalize }}</h5>
+<ul>
+{% for node in site.pages %}
+  {% if page.categories != null and page.categories == node.categories %}
+  <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+    {% include featured.html %}
+  
+    </aside>
+    </ul>
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->

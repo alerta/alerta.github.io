@@ -1,0 +1,16 @@
+
+@import url(http://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin,latin-ext);
+
+html {
+   font-family: Sintony !important;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 0.9em;
+  font-weight: normal;
+  background: #F0F0F0;
+}
