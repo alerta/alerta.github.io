@@ -20,7 +20,7 @@ All requests support a `callback` parameter so that responses can be output in J
 `GET /alerta/api/v1/alerts/alert/{id}`
 
 ### Request
-{% highlight json %}
+{% highlight bash %}
 Nothing
 {% endhighlight %}
 
@@ -95,9 +95,9 @@ Nothing
 `GET /alerta/api/v1/alerts?{query}{hide-alert-details=true}{hide-alert-repeats=true}{hide-alert-history=true}{limit=#}{from-date=isoformat}{sort-by=field}`
 
 ### Request
-```json
+{% highlight json %}
 Nothing
-```
+{% endhighlight %}
 
 ### Response
 {% highlight json %}
@@ -208,9 +208,9 @@ Nothing
 `PUT /alerta/api/v1/alerts/alert/{id}`
 
 ### Request
-```json
+{% highlight json %}
 { attribute: 'value' }
-```
+{% endhighlight %}
 
 ### Response
 {% highlight json %}
@@ -234,9 +234,9 @@ Nothing
 ### Request
 Only required if `POST` method is used.
 
-```json
+{% highlight json %}
 { "_method": "delete" }
-```
+{% endhighlight %}
 
 ### Response
 {% highlight json %}
