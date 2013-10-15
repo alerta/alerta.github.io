@@ -43,3 +43,11 @@ Stopping snmptrapd:                                        [  OK  ]
 6. service snmptrapd start
 7. /opt/bin/alertctl --report
 
+Log files
+
+{% highlight bash %}
+$ tail -f alerta/*.log mongo/mongod.log rabbitmq/rabbit\@infmonalr51.log rabbitmq/rabbit\@infmonalr51-sasl.log
+{% endhighlight %}
+
+References
+
