@@ -1,8 +1,19 @@
 
-@import url(http://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin,latin-ext);
+/* @import url(http://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin,latin-ext); */
 
-html {
-   font-family: Sintony !important;
+@font-face {
+    font-family: Sintony;
+    src: url('../assets/fonts/Sintony-Regular.ttf');
+}
+
+@font-face {
+    font-family: Sintony;
+    font-weight: bold;
+    src: url('../assets/fonts/Sintony-Bold.ttf');
+}
+
+* {
+   font-family: 'Sintony' !important;
 }
 
 code,
