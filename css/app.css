@@ -13,15 +13,15 @@
 }
 
 * {
-   font-family: 'Sintony' !important;
+    font-family: 'Sintony' !important;
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
-  font-size: 0.9em;
-  font-weight: normal;
-  background: #F0F0F0;
+    font-family: monospace, serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    background: #F0F0F0;
 }
