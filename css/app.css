@@ -16,6 +16,12 @@
     font-family: 'Sintony' !important;
 }
 
+body {
+    /* color: blue; */
+    /* background: #fff url(/images/alerta.png) no-repeat bottom right; */
+    /* background-color: red; */
+}
+
 code,
 kbd,
 pre,
@@ -24,4 +30,8 @@ samp {
     font-size: 0.9em;
     font-weight: normal;
     background: #F0F0F0;
+}
+
+.home {
+    color: black;
 }

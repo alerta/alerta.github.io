@@ -1,6 +1,6 @@
 ---
-layout: docs
-title: alert-query(1) man page
+layout: manpage
+title: alert-query(1)
 permalink: /alert-query/
 categories: manpage
 tags: [cli, tool, api]

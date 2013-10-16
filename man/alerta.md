@@ -1,6 +1,6 @@
 ---
-layout: docs
-title: alerta(1) man page
+layout: manpage
+title: alerta(1)
 permalink: /alerta/
 categories: manpage
 ---
