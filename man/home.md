@@ -4,6 +4,7 @@ title: Man Pages
 permalink: /home/
 categories: introduction
 tags: [manpage]
+featured: true
 ---
 
 <ul>

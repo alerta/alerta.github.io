@@ -4,6 +4,7 @@ title: Documentation
 permalink: /home/
 categories: introduction
 tags: [docs]
+featured: true
 ---
 
 Alerta is distributed, scalable, extensible monitoring system that accepts alerts from any source and can forward alerts to any destination.
