@@ -4,6 +4,7 @@ title: Design Principles
 permalink: /principles/
 categories: server
 tags: [spec, api, standards]
+comments: true
 ---
 
 ### PUSH not pull
