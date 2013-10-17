@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Alerta FAQ
-permalink: /alerta-faq/
+permalink: /faq/
 categories: general
 tags: [help, faq]
 ---

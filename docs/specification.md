@@ -1,4 +1,10 @@
-
+---
+layout: docs
+title: Specification
+permalink: /spec/
+categories: server
+tags: [ rfc5674 ]
+---
 
 # ALERT FORMAT
 
@@ -6,6 +12,7 @@ Alerts received and sent by Alerta conform to a common alert format. All compone
 
 ## Alert attributes populated at source
 
+``` html
 <table>
   <thead><th>Attribute</th><th>Description</th><th>Optional?</th></thead>
   <tbody>
@@ -64,6 +71,7 @@ Alerts received and sent by Alerta conform to a common alert format. All compone
     <tr><td><code>trendIndication</code></td><td>based on <code>severity</code> and <code>previousSeverity</code> will be one of <code>moreSevere</code>, <code>lessSevere</code> or <code>noChange</code></td></tr>
   </tbody>
 </table>
+```
 
 ## Example Alert
 
