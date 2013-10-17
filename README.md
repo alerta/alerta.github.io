@@ -1,29 +1,17 @@
 alerta.io
 =========
 
-Alerta's Jekyll-based web site.
+Alerta monitoring system web site.
 
 
-YAML Front Matter
-------------------
-layout:
- - docs
+Installation
+------------
 
-title:
-
-permalink:
-
-categories:
- - general
- - installation
- - server
- - client
- - parsers
- - protocol
-
-tags:
- - cli
- - ???
+    $ sudo gem install jekyll
+    $ sudo gem install redcarpet
+    $ git clone https://github.com/alerta/alerta.github.io
+    $ cd alerta.github.io
+    $ jekyll serve -w
 
 
 License
