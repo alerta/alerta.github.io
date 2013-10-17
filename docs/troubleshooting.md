@@ -8,7 +8,7 @@ tags: [rabbitmq, httpd, mongodb, snmptrapd, elasticsearch]
 
 ### Restart Daemon Services
 
-{% highlight bash %}
+```bash
 $ sudo /opt/bin/alertctl --stop
 Shutting down alert-ircbot:                                [  OK  ]
 Shutting down alert-pinger:                                [  OK  ]
@@ -33,7 +33,7 @@ $ sudo service elasticsearch stop
 Stopping elasticsearch:                                    [  OK  ]
 $ sudo service snmptrapd stop
 Stopping snmptrapd:                                        [  OK  ]
-{% endhighlight %}
+```
 
 1. start rabbitmq-server
 2. start mongod
@@ -45,9 +45,9 @@ Stopping snmptrapd:                                        [  OK  ]
 
 Log files
 
-{% highlight bash %}
+```bash
 $ tail -f alerta/*.log mongo/mongod.log rabbitmq/rabbit\@infmonalr51.log rabbitmq/rabbit\@infmonalr51-sasl.log
-{% endhighlight %}
+```
 
 References
 

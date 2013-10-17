@@ -17,15 +17,15 @@ The Alerta REST API is how the alert console interfaces with the alert database.
 All requests support a `callback` parameter so that responses can be output in JSONP format.
 
 ## Get an alert
-`GET /alerta/api/v1/alerts/alert/{id}`
+`GET /alerta/api/v2/alerts/alert/{id}`
 
 ### Request
-{% highlight bash %}
+```json
 Nothing
-{% endhighlight %}
+```
 
 ### Response
-{% highlight json %}
+```json
 {
     "response": {
         "alert": {
@@ -85,22 +85,22 @@ Nothing
         "warning": "This is the development server. For testing purposes only."
     }
 }
-{% endhighlight %}
+```
 
 ### Example
 
-`curl 'http://monitoring.guprod.gnl/alerta/api/v1/alerts/alert/9350eee8-7649-43b0-ae02-d69ffeadec31' | python -mjson.tool`
+`curl 'http://monitoring.guprod.gnl/alerta/api/v2/alerts/alert/9350eee8-7649-43b0-ae02-d69ffeadec31' | python -mjson.tool`
 
 ## Get a list of alerts
-`GET /alerta/api/v1/alerts?{query}{hide-alert-details=true}{hide-alert-repeats=true}{hide-alert-history=true}{limit=#}{from-date=isoformat}{sort-by=field}`
+`GET /alerta/api/v2/alerts?{query}{hide-alert-details=true}{hide-alert-repeats=true}{hide-alert-history=true}{limit=#}{from-date=isoformat}{sort-by=field}`
 
 ### Request
-{% highlight json %}
+```json
 Nothing
-{% endhighlight %}
+```
 
 ### Response
-{% highlight json %}
+```json
 {
     "response": {
         "alerts": {
@@ -135,17 +135,17 @@ Nothing
         "total": 6520
     }
 }
-{% endhighlight %}
+```
 
 ### Example
 
-`curl 'http://monitoring.guprod.gnl/alerta/api/v1/alerts?environment=PROD&group=OS&group=Puppet'`
+`curl 'http://monitoring.guprod.gnl/alerta/api/v2/alerts?environment=PROD&group=OS&group=Puppet'`
 
 ## Create an alert
-`POST /alerta/api/v1/alerts/alert.json`
+`POST /alerta/api/v2/alerts/alert.json`
 
 ### Request
-{% highlight json %}
+```json
 {
     "correlatedEvents": [
         "event1", 
@@ -170,10 +170,10 @@ Nothing
     "type": "apiAlert", 
     "value": "val100", 
 }
-{% endhighlight %}
+```
 
 ### Response
-{% highlight json %}
+```json
 {
     "response": {
         "id": "82171a5a-cb72-47d9-92fc-3d7048a92e2c", 
@@ -182,12 +182,12 @@ Nothing
         "time": "0.006"
     }
 }
-{% endhighlight %}
+```
 
 ### Example
-`curl -XPOST http://monitoring.gudev.gnl/alerta/api/v1/alerts/alert.json -d`  
+`curl -XPOST http://api.alerta.io/alerta/api/v2/alerts/alert.json -d`  
 
-{% highlight json %}
+```json
 {  
     "resource": "host5",  
     "event": "HostAvail",  
@@ -202,18 +202,18 @@ Nothing
     ],  
     "text": "Host is not responding to ping"  
 }
-{% endhighlight %}
+```
 
 ## Modify an alert
-`PUT /alerta/api/v1/alerts/alert/{id}`
+`PUT /alerta/api/v2/alerts/alert/{id}`
 
 ### Request
-{% highlight json %}
+```json
 { attribute: 'value' }
-{% endhighlight %}
+```
 
 ### Response
-{% highlight json %}
+```json
 {
     "response": {
         "localTime": "2012-10-01T17:21:52", 
@@ -221,33 +221,33 @@ Nothing
         "time": "0.007"
     }
 }
-{% endhighlight %}
+```
 
 ### Example
-`curl -XPUT http://monitoring.guprod.gnl/alerta/api/v1/alerts/alert/f0130da3-f2d8-4525-9533-5850cfa19a12 -d '{ "status": "ACK" }'`
+`curl -XPUT http://monitoring.guprod.gnl/alerta/api/v2/alerts/alert/f0130da3-f2d8-4525-9533-5850cfa19a12 -d '{ "status": "ACK" }'`
 
 ## Delete an alert
-`DELETE /alerta/api/v1/alerts/alert/{id}`
+`DELETE /alerta/api/v2/alerts/alert/{id}`
 
-`POST /alerta/api/v1/alerts/alert/{id}`
+`POST /alerta/api/v2/alerts/alert/{id}`
 
 ### Request
 Only required if `POST` method is used.
 
-{% highlight json %}
+```json
 { "_method": "delete" }
-{% endhighlight %}
+```
 
 ### Response
-{% highlight json %}
+```json
 {
     "response": {
         "status": "failed"
     }
 }
-{% endhighlight %}
+```
 
 ### Example
-`curl  -XDELETE http://monitoring.gudev.gnl/alerta/api/v1/alerts/alert/8ea232ef-3b2d-4e8e-9ec7-e3ae67b4d695`
+`curl  -XDELETE http://api.alerta.io/alerta/api/v2/alerts/alert/8ea232ef-3b2d-4e8e-9ec7-e3ae67b4d695`
 
 
