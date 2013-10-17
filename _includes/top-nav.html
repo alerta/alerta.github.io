@@ -3,14 +3,20 @@
   <div class="row">
     <div class="large-12 columns">
       <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="{{ site.url }}/docs/home/" class="button">Documentation</a></li>
-         <li><a href="{{ site.url }}/docs/download/" class="button">Download</a></li>
-         <li><a href="http://try.alerta.io" class="button">Try It</a></li>
-         <li><a href="{{ site.repository }}" class="button">View on Github</a></li>
+        <ul class="button-group hide-for-small">
+          <li><a href="{{ site.url }}/docs/home/" class="button">Documentation</a></li>
+          <li><a href="{{ site.url }}/docs/download/" class="button">Download</a></li>
+          <li><a href="http://try.alerta.io" class="button">Try It</a></li>
+          <li><a href="{{ site.repository }}" class="button">View on Github</a></li>
+        </ul>
+        <ul class="button-group show-for-small">
+          <li><a href="{{ site.url }}/docs/home/" class="button">Docs</a></li>
+          <li><a href="{{ site.url }}/docs/download/" class="button">Get It</a></li>
+          <li><a href="http://try.alerta.io" class="button">Try It</a></li>
+          <li><a href="{{ site.repository }}" class="button">Github</a></li>
         </ul>
       </div>
-      <h1><a class="home" href="/home/">alerta</a> <small>monitoring system</small></h1>
+      <h1><a class="home" href="/home/">alerta</a> <span class="hide-for-small"><small>monitoring system</small></span></h1>
       <hr />
     </div>
   </div>
