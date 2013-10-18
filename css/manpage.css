@@ -1,0 +1,132 @@
+/* man.css - core manpage styles */
+
+/* http://rtomayko.github.io/ronn */
+
+/*
+       Copyright (C) 2009 Ryan Tomayko <tomayko.com/about>
+
+Permission  is  hereby granted, free of charge, to any person ob-
+taining a copy of  this  software  and  associated  documentation
+files  (the "Software"), to deal in the Software without restric-
+tion, including without limitation the rights to use, copy, modi-
+fy, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is  fur-
+nished to do so, subject to the following conditions:
+
+The  above  copyright  notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF  ANY  KIND,
+EXPRESS  OR  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE  AND  NONIN-
+FRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER  IN  AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  THE
+SOFTWARE.
+
+*/
+
+/* STRUCTURE, INDENT, MARGINS */
+
+div#manpage                        { margin:0 }
+.mp {
+    /* max-width:100ex; */
+    padding:0 2ex 1ex 2ex;
+}
+
+.mp p,  .mp pre,
+.mp ul, .mp ol, .mp ul              { margin:0 0 20px 0 }
+.mp h2                              { margin:10px 0 0 0 }
+
+.mp .highlight                      { margin-left:12ex }
+.mp > p, .mp > pre, .mp > ul,
+.mp > ol, .mp > ul                  { margin-left:8ex }
+.mp h3                              { margin:0 0 0 4ex }
+
+.mp dt                              { margin:0; clear:left }
+.mp dt.flush                        { float:left; width:8ex }
+.mp dd                              { margin:0 0 0 9ex }
+.mp h1, .mp h2, .mp h3, .mp h4      { clear:left }
+
+.mp pre                             { margin-bottom:20px }
+.mp pre+h2, .mp pre+h3              { margin-top:22px }
+.mp h2+pre, .mp h3+pre              { margin-top:5px }
+
+.mp img                             { display:block;margin:auto }
+.mp h1.man-title                    { display:none }
+
+/* FONTS */
+
+.mp, .mp a, .mp p, .mp em, .mp strong, .mp code, .mp pre, .mp tt,
+.mp kbd, .mp samp, .mp h2, .mp h3, .mp h4 {
+    font-family:monospace;
+    font-size:14px;
+    line-height:1.42857142857143;
+}
+.mp h2 {
+  font-size:16px;
+  line-height:1.25;
+}
+.mp h1 {
+  font-size:20px;
+  line-height:2;
+}
+
+/* TEXT STYLES */
+
+.mp {
+  text-align:justify;
+  background:#fff;
+}
+.mp, .mp code, .mp pre,
+.mp pre code, .mp tt, .mp kbd,
+.mp samp                            { color:#131211 }
+.mp h1, .mp h2, .mp h3, .mp h4      { color:#030201 }
+.mp u                               { text-decoration:underline; }
+
+.mp code, .mp strong, .mp b {
+    font-weight:bold;
+    color:#131211;
+}
+
+.mp em, .mp var {
+    font-style:italic;
+    color:#232221;
+    text-decoration:none;
+}
+
+/* LINKS */
+
+.mp a                              { text-decoration: underline }
+.mp a, .mp a:link, .mp a:hover,
+.mp a code, .mp a pre, .mp a tt,
+.mp a kbd, .mp a samp              { color:#0000ff }
+
+.mp b.man-ref                      { font-weight:normal;color:#434241 }
+
+/* PREFORMATTED BLOCKS */
+
+.mp pre                            { padding:0 4ex }
+.mp pre code                       { font-weight:normal;color:#434241 }
+.mp h2+pre, h3+pre                 { padding-left:0 }
+.mp li                             { list-style: none }
+.mp li > p:first-child             { padding-left: 8ex; text-indent:-8ex }
+.mp li p                           { padding-left: 8ex }
+
+/* DOCUMENT HEADER AND FOOTER AREAS */
+
+ol.man-decor, ol.man-decor li {
+    margin:3px 0 10px 0;
+    padding:0;
+    float:left;
+    width:33%;
+    list-style-type:none;
+    text-transform:uppercase;
+    color:#999;
+    letter-spacing:1px;
+}
+ol.man-decor                  { width:100% }
+ol.man-decor li.tl            { text-align:left }
+ol.man-decor li.tc            { text-align:center; letter-spacing:4px }
+ol.man-decor li.tr            { text-align:right; float:right }
