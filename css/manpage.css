@@ -59,7 +59,7 @@ div#manpage                        { margin:0 }
 /* FONTS */
 
 .mp, .mp a, .mp p, .mp em, .mp strong, .mp code, .mp pre, .mp tt,
-.mp kbd, .mp samp, .mp h2, .mp h3, .mp h4 {
+.mp kbd, .mp li, .mp samp, .mp h2, .mp h3, .mp h4 {
     font-family:monospace;
     font-size:14px;
     line-height:1.42857142857143;

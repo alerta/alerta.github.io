@@ -3,7 +3,7 @@ layout: manpage
 title: grep(1)
 permalink: /manpage/
 categories:
-tags:
+tags: [man1]
 ---
 
 ## NAME
