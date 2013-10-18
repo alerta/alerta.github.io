@@ -1,4 +1,6 @@
 name: alerta
+safe: true
+lsi: false
 pygments: true
 tracking_id: UA-44829146-1
 repository: https://github.com/guardian/alerta
