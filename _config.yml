@@ -1,2 +1,5 @@
-name: Your New Jekyll Site
-pygments: true
+name: alerta
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+relative_permalinks: false

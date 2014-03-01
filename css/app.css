@@ -1,0 +1,34 @@
+
+/* @import url(http://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin,latin-ext); */
+
+@font-face {
+    font-family: Sintony;
+    src: url('../assets/fonts/Sintony-Regular.ttf');
+}
+
+@font-face {
+    font-family: Sintony;
+    font-weight: bold;
+    src: url('../assets/fonts/Sintony-Bold.ttf');
+}
+
+* {
+    font-family: 'Sintony';
+}
+
+body {
+    /* color: blue; */
+    /* background: #fff url(/images/alerta.png) no-repeat bottom right; */
+    /* background-color: red; */
+}
+
+
+div#content-outer {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home {
+    color: black;
+}
