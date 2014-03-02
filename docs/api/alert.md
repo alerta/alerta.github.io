@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Alert Specification
-permalink: /docs/spec/
+permalink: /docs/api/alert/
 categories: docs
 tags: spec
 ---
@@ -28,23 +28,6 @@ createTime<br>_optional_ | time event was generated in ISO 8601 format | DateTim
 timeout<br>_optional_ | time alert is valid for, usually deleted after this period | String
 rawData<br>_optional_ | raw data of alert <br>**Example Values:** SNMP trap data or Syslog data | String
 
-### Alert Document
-
-(as above with additional calculated attributes)
-
-Name | Description | Type
------ | ----------- | ----
-status<br>_assigned_ | | String
-duplicateCount<br>_assigned_ | | Int
-repeat<br>_assigned_ | true or false | Boolean
-previousSeverity<br>_assigned_ | | String
-trendIndication<br>_assigned_ | trend of alert <br>**Example Values:** moreSevere, lessSevere, noChange | String
-receiveTime<br>_assgined_ | ISO 8601 date to milliseconds UTC | DateTime
-lastReceiveId<br>_assigned_ | last UUID | String
-lastReceiveTime<br>_assigned_ | based on last event if duplicate | DateTime
-history<br>_assigned_ | updated | List
-
-
 {% highlight scala linenos %}
     id: String,
     environment: String,
@@ -67,14 +50,4 @@ history<br>_assigned_ | updated | List
     createTime: DateTime,
     timeout: Int,
     rawData: String
-
-    status: String,
-    duplicateCount: Int,
-    repeat: Boolean,
-    previousSeverity: Option[String],
-    trendIndication: Option[String],
-    receiveTime: DateTime,
-    lastReceiveId: String,
-    lastReceiveTime: DateTime,
-    history: List[Map[String,String]]
 {% endhighlight %}
