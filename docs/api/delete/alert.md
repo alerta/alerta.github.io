@@ -2,7 +2,7 @@
 layout: default
 title: DELETE /alert/:id
 permalink: /docs/api/delete/alert/
-categories: delete
+categories: api
 tags: rest
 comments: true
 ---
