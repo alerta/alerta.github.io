@@ -15,7 +15,7 @@ http://api.alerta.io/v3/alert
 
 | Paramter | Description |
 | -------- | -------- |
-| :id<br>mandatory| Alert id<br>Example: bc31f0f7-dec4-4a86-bce0-6e1662a63474|
+| :id<br>_mandatory_| Alert id<br>**Example Values:** bc31f0f7-dec4-4a86-bce0-6e1662a63474|
 
 ### Example Request
 

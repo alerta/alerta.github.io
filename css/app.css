@@ -12,6 +12,11 @@
     src: url('../assets/fonts/Sintony-Bold.ttf');
 }
 
+html {
+    font-size: 0.9rem;
+
+}
+
 body {
     font-family: 'Sintony';
 }
@@ -24,6 +29,7 @@ body {
     color: black;
 }
 
-code {
+code.json {
     font-weight: normal;
+    font-size: 0.8em;
 }

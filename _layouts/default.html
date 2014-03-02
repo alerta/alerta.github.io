@@ -4,25 +4,29 @@
 
   {% include top_nav.html %}
 
-    <div class="row">
-      <div class="large-12 columns">
-        <h1 id="title">{{ page.title }}</h1>
-      </div>
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 id="title">{{ page.title }}</h1>
     </div>
-    <div class="row">
-      <div class="large-8 columns">
-        {{ content }}
-      </div>
-      <div class="large-4 columns">
-        {% include tags.html %}
-      </div>
+  </div>
+
+  <!-- Main Page Content -->
+
+  <div class="row">
+    <div class="large-9 columns">
+      {{ content }}
     </div>
 
-    {% include disqus.html %}
-    {% include footer.html %}
+    <!-- End Main Content -->
 
-    {% include analytics.html %}
+  </div>
 
+  {% include tags.html %}
+  {% include disqus.html %}
+  {% include footer.html %}
+  {% include analytics.html %}
   {% include scripts.html %}
 
 </body>
