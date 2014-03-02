@@ -12,16 +12,10 @@
     src: url('../assets/fonts/Sintony-Bold.ttf');
 }
 
-* {
-    font-family: 'Sintony';
-}
-
 body {
-    /* color: blue; */
-    /* background: #fff url(/images/alerta.png) no-repeat bottom right; */
-    /* background-color: red; */
+    font-family: 'Sintony';
+    font-size: 12px;
 }
-
 
 div#content-outer {
     width: 960px;
@@ -29,6 +23,22 @@ div#content-outer {
     margin-right: auto;
 }
 
+div#content-inner {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#content-sidebar {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .home {
     color: black;
+}
+
+code {
+    font-weight: normal;
 }

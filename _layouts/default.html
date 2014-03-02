@@ -4,18 +4,27 @@
 
   {% include top_nav.html %}
 
-   <div id="header-outer">
-   </div>
+  <div id="header-outer">
+  </div>
 
-   <div id="content-outer">
-   <h1 id="title">{{ page.title }}</h1>
-     <div id="content-inner">
-       {{ content }}
-     </div>
-   </div>
+  <div id="content-outer">
+  <h1 id="title">{{ page.title }}</h1>
+    <div id="content-inner">
+      {{ content }}
+    </div>
+    <div id="content-sidebar">
+    </div>
+  </div>
 
-   <div id="footer-outer">
-   </div>
+  {% include tags.html %}
+  {% include disqus.html %}
+  {% include footer.html %}
+  {% include scripts.html %}
+
+  {% include analytics.html %}
+
+  <div id="footer-outer">
+  </div>
 
 </body>
 </html>
