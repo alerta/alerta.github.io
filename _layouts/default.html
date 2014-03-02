@@ -2,29 +2,32 @@
 
 <body>
 
+  <div class="container">
+
   {% include top_nav.html %}
 
-  <div id="header-outer">
-  </div>
-
-  <div id="content-outer">
-  <h1 id="title">{{ page.title }}</h1>
-    <div id="content-inner">
-      {{ content }}
+    <div class="row">
+      <div class="large-12 column">
+        <h1 id="title">{{ page.title }}</h1>
+      </div>
     </div>
-    <div id="content-sidebar">
+    <div class="row">
+      <div class="large-8 columns">
+        {{ content }}
+      </div>
+      <div class="large-4 columns">
+        {% include tags.html %}
+      </div>
     </div>
-  </div>
 
-  {% include tags.html %}
-  {% include disqus.html %}
-  {% include footer.html %}
+    {% include disqus.html %}
+    {% include footer.html %}
+
+    {% include analytics.html %}
+
+  </div> <!-- container -->
+
   {% include scripts.html %}
-
-  {% include analytics.html %}
-
-  <div id="footer-outer">
-  </div>
 
 </body>
 </html>

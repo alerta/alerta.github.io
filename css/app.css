@@ -17,22 +17,8 @@ body {
     font-size: 12px;
 }
 
-div#content-outer {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div#content-inner {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div#content-sidebar {
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto;
+.label {
+    font-weight: bold;
 }
 
 .home {
