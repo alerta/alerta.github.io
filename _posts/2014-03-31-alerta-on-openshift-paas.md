@@ -2,7 +2,7 @@
 layout: post
 title:  "Alerta on OpenShift PaaS"
 date:   2014-03-31 15:45:21
-categories: jekyll update
+categories: blog
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

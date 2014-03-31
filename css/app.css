@@ -14,7 +14,6 @@
 
 h1 {
   font-weight: bold;
-  color: #fff;
   font-size: 32px;
 }
 
@@ -42,6 +41,14 @@ p {
 
 ul.inline-list {
     font-size: 0.9em;
+}
+
+.top-bar {
+    font-size: 2em;
+}
+
+.top-bar-section li a:not(.button) {
+    font-family: 'Sintony';
 }
 
 .label {
