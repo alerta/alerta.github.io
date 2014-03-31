@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: POST /alert/:id/status
 permalink: /docs/api/post/alert/status/
 categories: api

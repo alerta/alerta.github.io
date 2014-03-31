@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Alert Document
 permalink: /docs/api/alertdoc/
 categories: docs

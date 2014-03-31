@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: DELETE /alert/:id
 permalink: /docs/api/delete/alert/
 categories: api

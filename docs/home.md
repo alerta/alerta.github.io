@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Documentation
 permalink: /docs/home/
 categories: home

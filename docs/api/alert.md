@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Alert Specification
 permalink: /docs/api/alert/
 categories: docs

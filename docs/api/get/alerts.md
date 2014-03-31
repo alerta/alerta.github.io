@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: GET /alerts
 permalink: /docs/api/get/alerts/
 categories: api

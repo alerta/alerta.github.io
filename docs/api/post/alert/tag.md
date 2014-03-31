@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: POST /alert/:id/tag
 permalink: /docs/api/post/alert/tag/
 categories: api

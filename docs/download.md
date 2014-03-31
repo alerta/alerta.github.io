@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Download
 permalink: /docs/download/
 categories: home
