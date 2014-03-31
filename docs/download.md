@@ -7,7 +7,7 @@ tags: [github, openshift, docker, packer, amazon ami, rpm, deb]
 featured: true
 ---
 
-## Alerta is available to download in various formats:
+Alerta is available to download in various formats:
 
 <ul>
   <li>Clone or fork on <a href="">GitHub</a>
