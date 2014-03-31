@@ -9,6 +9,6 @@ featured: true
 
 There is a demo version of alerta running in OpenShift:
 
-<li><a href="http://try.alerta.io">API</a></li>
-<li><a href="">Dashboard</a></li>
+<li><a href="http://api.alerta.io">API</a></li>
+<li><a href="http://try.alerta.io">Dashboard</a></li>
 
