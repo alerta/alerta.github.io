@@ -7,11 +7,23 @@ tags: []
 featured: true
 ---
 
+### Version 3.0.3 (not tagged yet)
+
+<ul>
+  <li>sundry bug fixes to alert console and other components</li>
+</ul>
+
+### Version 3.0.2
+
+<ul>
+  <li>add support for detailed alert history queries</li>
+  <li>retire alert-query, alert-sender and alert-checker (use unified command-line tool instead)</li>
+</ul>
 
 ### Version 3.0.1
 
 <ul>
-  <li>production-ready version of release 3.0</li>
+  <li>package in virtualenv, build as RPM using teamcity and deploy via RiffRaff</li>
 </ul>
 
 ### Version 3.0.0
