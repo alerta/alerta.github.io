@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>alerta: monitoring tool</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">alerta</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+        <p><a class="btn btn-primary btn-lg" href="http://try.alerta.io" role="button">Try it now &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Why Alerta?</h2>
+          <p>Scalable monitoring and alert visualisation. A minimal installation can be deployed quickly and easily extended as monitoring requirements and confidence grow. There are integrations available with Riemann, Nagios, Zabbix, Kibana and Sensu. Integrating bespoke systems is easy using the API or command-line tool.</p>
+          <p><a class="btn btn-default" href="http://try.alerta.io" role="button">Try it now &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Alert API</h2>
+          <p>Alerts are submitted in JSON-format to a HTTP API. Alerts can be queried from the command-line or viewed in a responsive web console optimized for desktop, tablet and mobile. User access can be added using Google OAuth2 and programatic access using API keys.</p>
+          <p><a class="btn btn-default" href="http://explorer.alerta.io" role="button">API Explorer &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Deploy It!</h2>
+          <p>There are standard deployments to AWS EC2, RedHat OpenShift, Packer, Docker and Heroku available to get you going in minutes. Other more complex deployments make use of standard Python package install techniques.</p>
+          <p><a class="btn btn-default" href="http://docs.alerta.io" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

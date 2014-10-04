@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: jumbotron
 title:  "Welcome to Jekyll!"
 date:   2013-10-11 15:45:21
 categories: jekyll update
