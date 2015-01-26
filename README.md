@@ -1,6 +1,14 @@
 alerta.io jekyll website
 ========================
 
+Testing
+-------
+
+Run the following command then browse to http://localhost:4000 ...
+
+    $ jekyll serve
+
+
 License
 -------
 
