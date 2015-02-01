@@ -6,6 +6,9 @@ Testing
 
 Run the following command then browse to `http://localhost:4000` ...
 
+    $ gem install jekyll
+    $ git clone https://github.com/alerta/alerta.github.io 
+    $ cd alerta.github.io
     $ jekyll serve -w
 
 
