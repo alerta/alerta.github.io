@@ -7,7 +7,7 @@ Testing
 Run the following command then browse to `http://localhost:4000` ...
 
     $ gem install jekyll
-    $ git clone https://github.com/alerta/alerta.github.io 
+    $ git clone https://github.com/alerta/alerta.github.io
     $ cd alerta.github.io
     $ jekyll serve -w
 
@@ -15,8 +15,8 @@ Run the following command then browse to `http://localhost:4000` ...
 License
 -------
 
-    Alerta monitoring system and console
-    Copyright 2014 Nick Satterly
+    Alerta monitoring system
+    Copyright 2014-2016 Nick Satterly
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
