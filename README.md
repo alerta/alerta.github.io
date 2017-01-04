@@ -16,7 +16,7 @@ License
 -------
 
     Alerta monitoring system
-    Copyright 2014-2016 Nick Satterly
+    Copyright 2014-2017 Nick Satterly
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
