@@ -19,9 +19,14 @@ title: alerta
           <img src="/assets/images/slide-01.jpg" alt="Slide 1">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Release 4.8 is available.</h1>
+              <h1>Release 4.10 is out!</h1>
               <hr></hr>
-              <p>Alerta now integrates out-of-the-box with <a href="https://prometheus.io/">Prometheus</a> and <a href="https://cloud.google.com/stackdriver/">Google Stackdriver</a> and there is native support in <a href="">InfluxDB Kapacitor</a> for alert forwarding to Alerta. Integration with PagerDuty and Telegram now includes bi-directional alert acknowledgement.</p>
+              <p>Alerta now integrates out-of-the-box with
+                <a href="https://prometheus.io/">Prometheus</a> and
+                <a href="https://cloud.google.com/stackdriver/">Google Stackdriver</a>
+                and there is native support in <a href="">InfluxDB Kapacitor</a>
+                for alert forwarding to Alerta. Integration with Zabbix, PagerDuty and
+                Telegram now includes two-way alert acknowledgement.</p>
               <p><a class="btn btn-lg btn-primary" href="http://try.alerta.io" role="button">Try it now</a></p>
             </div>
           </div>
@@ -32,7 +37,14 @@ title: alerta
             <div class="carousel-caption">
               <h1>Keep track of individual alerts.</h1>
               <hr></hr>
-              <p>Logged in users can manage and watch alerts that are of interest to them. So to make user management as simple as possible there is built-in support for OAuth user logins using <a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google</a>, <a href="https://developer.github.com/v3/oauth/">GitHub</a> and <a href="http://doc.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> as well as Basic Auth for situations where OAuth isn't available.</p>
+              <p>Logged in users can manage and watch alerts that are of
+                interest to them. So to make user management as simple as
+                possible there is built-in support for OAuth, SAML2 and LDAP user logins using
+                <a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google</a>,
+                <a href="https://developer.github.com/v3/oauth/">GitHub</a>,
+                <a href="http://doc.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> and
+                <a href="https://keycloak.gitbooks.io/documentation/authorization_services/index.html">Keycloak</a>
+                as well as Basic Auth for situations where OAuth isn't available.</p>
               <p><a class="btn btn-lg btn-primary" href="http://docs.alerta.io/en/latest/release-notes.html" role="button">Learn more</a></p>
             </div>
           </div>
@@ -41,10 +53,13 @@ title: alerta
           <img src="/assets/images/slide-03.jpg" alt="Slide 3">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Deploy using the Heroku button.</h1>
+              <h1>Deploy using Docker.</h1>
               <hr></hr>
-              <p>Heroku has introduced a new faster and easier way to deploy apps. Simply click the <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy on Heroku"> button in the GitHub repo README for <a href="https://github.com/guardian/alerta#deploy-to-the-cloud">alerta</a> or the <a href="https://github.com/alerta/angular-alerta-webui#deploy-to-the-cloud">web ui</a> to get going in minutes.</p>
-              <p><a class="btn btn-lg btn-primary" href="https://github.com/guardian/alerta#deploy-to-the-cloud" role="button">Deploy to Heroku</a></p>
+              <p>The <strong>alerta-web</strong> docker container has been
+                downloaded 200 thousand times because it's one of the most
+                reliable ways to get going quickly. Easy to configure, it can
+                be used in simple and complex environments.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://hub.docker.com/r/alerta/alerta-web/" role="button">Docker Deploy</a></p>
             </div>
           </div>
         </div>
@@ -74,4 +89,3 @@ title: alerta
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
-
