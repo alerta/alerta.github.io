@@ -49,13 +49,18 @@
                 <li class="active"><a href="http://alerta.io">Home</a></li>
                 <li><a href="http://docs.alerta.io">Documentation</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Develop <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://docs.alerta.io/en/latest/server.html">Alerta API</a></li>
+                    <li><a href="https://github.com/alerta/angular-alerta-webui">Web UI</a></li>
                     <li><a href="https://github.com/alerta/python-alerta">CLI &amp; Python SDK</a></li>
-                    <li><a href="https://github.com/alerta/alerta-contrib">Plugins</a></li>
-                    <li><a href="https://github.com/alerta/alerta-chrome-extension">Chrome Extension</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Integrations</li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">External</li>
                     <li><a href="https://github.com/alerta/nagios-alerta">Nagios</a></li>
                     <li><a href="https://github.com/alerta/zabbix-alerta">Zabbix</a></li>
                     <li><a href="https://github.com/alerta/riemann-alerta">Riemann</a></li>
@@ -65,13 +70,32 @@
                     <li><a href="https://docs.influxdata.com/kapacitor/latest/nodes/alert_node/#alerta">InfluxDB Kapacitor</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Webhooks</li>
-                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#pagerduty">PagerDuty</a></li>
                     <li><a href="http://docs.alerta.io/en/latest/integrations.html#cloudwatch">AWS Cloudwatch</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#grafana">Grafana</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#graylog">Graylog</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#newrelic">New Relic</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#pagerduty">PagerDuty</a></li>
                     <li><a href="http://docs.alerta.io/en/latest/integrations.html#pingdom">Pingdom</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#prometheus">Prometheus</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#riemann">Riemann</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#serverdensity">SeverDensity</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#slack">Slack</a></li>
                     <li><a href="http://docs.alerta.io/en/latest/integrations.html#stackdriver">Google Stackdriver</a></li>
+                    <li><a href="http://docs.alerta.io/en/latest/integrations.html#telegram">Telegram</a></li>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Deploy</li>
+                    <li class="dropdown-header">Plugins</li>
+                    <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/amqp">AMQP</a></li>
+                    <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/prometheus">Prometheus Alertmanager</a></li>
+                    <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/slack">Slack</a></li>
+                    <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/telegram">Telegram</a></li>
+                    <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins">More...</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deploy <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
                     <li><a href="https://github.com/alerta/alerta-cloudformation">AWS Cloudformation</a></li>
+                    <li><a href="https://github.com/alerta/gcloud-api-alerta">Google Cloud</a></li>
                     <li><a href="https://registry.hub.docker.com/u/alerta/alerta-web/">Docker</a></li>
                     <li><a href="https://github.com/alerta/packer-templates">Packer</a></li>
                     <li><a href="https://github.com/alerta/heroku-api-alerta">Heroku</a></li>
@@ -80,7 +104,8 @@
                     <li><a href="https://github.com/alerta/vagrant-try-alerta">Vagrant</a></li>
                   </ul>
                 </li>
-                <li><a href="http://github.com/guardian/alerta">GitHub</a></li>
+
+                <li><a href="http://github.com/alerta/alerta">GitHub</a></li>
               </ul>
             </div>
           </div>
@@ -192,13 +217,13 @@
       <footer>
 
         <div style="text-align:center">
-          <iframe src="https://ghbtns.com/github-btn.html?user=guardian&repo=alerta&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+          <iframe src="https://ghbtns.com/github-btn.html?user=alerta&repo=alerta&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
           <a href="https://twitter.com/alertaio" class="twitter-follow-button" data-show-count="false">Follow @alertaio</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
 
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014-2017 Nick Satterly &middot; <a href="http://ec.europa.eu/justice/data-protection/">Privacy</a> &middot; <a href="http://www.apache.org/licenses/LICENSE-2.0.html">License</a></p>
+        <p>&copy; 2014-2017 Nick Satterly &middot; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
       </footer>
 
     </div><!-- /.container -->
