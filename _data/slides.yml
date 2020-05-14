@@ -1,0 +1,73 @@
+- title: Release 5 has PostgreSQL support.
+  text: >
+    Support for PostgreSQL 9.6 has been added to the API so it is now
+    possible to deploy to AWS and use Amazon RDS or Google Cloud and
+    use Cloud SQL for pain-free deployment and maintenance.
+  button:
+    text: Find out more
+    url: https://github.com/alerta/alerta/wiki/Release-5-FAQ
+
+- title: More integrations!
+  text: >
+    Alerta now integrates out-of-the-box with
+    <a href="https://prometheus.io/">Prometheus</a> and
+    <a href="https://cloud.google.com/stackdriver/">Google Stackdriver</a>
+    and there is native support in <a href="">InfluxDB Kapacitor</a>
+    for alert forwarding to Alerta. Integration with Zabbix, PagerDuty and
+    Telegram now includes two-way alert acknowledgement.
+  button:
+    text: Try it now
+    url: http://try.alerta.io
+
+- title: Keep track of individual alerts.
+  text: >
+    Logged in users can manage and watch alerts that are of
+    interest to them. So to make user management as simple as
+    possible there is built-in support for OAuth, SAML2 and LDAP user logins using
+    <a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google</a>,
+    <a href="https://developer.github.com/v3/oauth/">GitHub</a>,
+    <a href="http://doc.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> and
+    <a href="https://keycloak.gitbooks.io/documentation/authorization_services/index.html">Keycloak</a>
+    as well as Basic Auth for situations where OAuth isn't available.
+  button:
+    text: Learn more
+    url: http://docs.alerta.io/en/latest/release-notes.html
+
+- title: Deploy using Docker.
+  text: >
+    The <strong>alerta-web</strong> docker container has been
+    downloaded 200 thousand times because it's one of the most
+    reliable ways to get going quickly. Easy to configure, it can
+    be used in simple and complex environments.
+  button:
+    text: Docker Deploy
+    url: https://hub.docker.com/r/alerta/alerta-web/
+
+- title: Explore the Alerta API.
+  text: >
+    Developers can now use a web UI to explore some of the
+    most important features of the Alerta API -- sending and
+    querying for alerts. Any alerts sent to the API using the
+    explorer can be viewed in the explorer or the
+    <a href="http://try.alerta.io/">web console</a> available
+    online.
+  button:
+    text: Explore the API
+    url: http://explorer.alerta.io
+
+- title: Partition alerts by customer.
+  text: >
+    Manage multiple customers using a single instance of Alerta
+    via <a href="http://docs.alerta.io/en/latest/customerviews.html">customer views.</a>
+    Customers can only see and action their own alerts. An admin
+    user can see alerts from all customers.
+  button:
+    text: Learn more
+    url: http://docs.alerta.io/en/latest/customerviews.html
+
+# - title:
+#   text: >
+#     ..
+#   button:
+#     text: 
+#     url: 

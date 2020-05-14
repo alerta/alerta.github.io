@@ -16,97 +16,19 @@ title: alerta
         <li data-target="#myCarousel" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item item-1 active">
-            <img src="/assets/images/slide-01.jpg" alt="Slide 1">
+        {% for slide in site.data.slides %}
+        <div class="item item-{{ forloop.index }} {% if forloop.first == true %}active{% endif %}">
+            <img src="/assets/images/slide-0{{ forloop.index }}.jpg" alt="Slide {{ forloop.index }}">
             <div class="container">
               <div class="carousel-caption">
-                <h1>Release 5 has PostgreSQL support.</h1>
+                <h1>{{ slide.title }}</h1>
                 <hr></hr>
-                <p>Support for PostgreSQL 9.6 has been added to the API so it is now
-                  possible to deploy to AWS and use Amazon RDS or Google Cloud and
-                  use Cloud SQL for pain-free deployment and maintenance.</p>
-                <p><a class="btn btn-lg btn-primary" href="https://github.com/alerta/alerta/wiki/Release-5-FAQ" role="button">Find out more</a></p>
+                <p>{{ slide.text }}</p>
+                <p><a class="btn btn-lg btn-primary" href="{{ slide.button.url }}" role="button">{{ slide.button.text }}</a></p>
               </div>
             </div>
           </div>
-        <div class="item item-2">
-          <img src="/assets/images/slide-02.jpg" alt="Slide 2">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>More integrations!</h1>
-              <hr></hr>
-              <p>Alerta now integrates out-of-the-box with
-                <a href="https://prometheus.io/">Prometheus</a> and
-                <a href="https://cloud.google.com/stackdriver/">Google Stackdriver</a>
-                and there is native support in <a href="">InfluxDB Kapacitor</a>
-                for alert forwarding to Alerta. Integration with Zabbix, PagerDuty and
-                Telegram now includes two-way alert acknowledgement.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://try.alerta.io" role="button">Try it now</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item item-3">
-          <img src="/assets/images/slide-03.jpg" alt="Slide 3">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Keep track of individual alerts.</h1>
-              <hr></hr>
-              <p>Logged in users can manage and watch alerts that are of
-                interest to them. So to make user management as simple as
-                possible there is built-in support for OAuth, SAML2 and LDAP user logins using
-                <a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google</a>,
-                <a href="https://developer.github.com/v3/oauth/">GitHub</a>,
-                <a href="http://doc.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> and
-                <a href="https://keycloak.gitbooks.io/documentation/authorization_services/index.html">Keycloak</a>
-                as well as Basic Auth for situations where OAuth isn't available.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://docs.alerta.io/en/latest/release-notes.html" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item item-4">
-          <img src="/assets/images/slide-01.jpg" alt="Slide 4">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Deploy using Docker.</h1>
-              <hr></hr>
-              <p>The <strong>alerta-web</strong> docker container has been
-                downloaded 200 thousand times because it's one of the most
-                reliable ways to get going quickly. Easy to configure, it can
-                be used in simple and complex environments.</p>
-              <p><a class="btn btn-lg btn-primary" href="https://hub.docker.com/r/alerta/alerta-web/" role="button">Docker Deploy</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item item-5">
-          <img src="/assets/images/slide-02.jpg" alt="Slide 5">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Explore the Alerta API.</h1>
-              <hr></hr>
-              <p>Developers can now use a web UI to explore some of the
-                most important features of the Alerta API -- sending and
-                querying for alerts. Any alerts sent to the API using the
-                explorer can be viewed in the explorer or the
-                <a href="http://try.alerta.io/">web console</a> available
-                online.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://explorer.alerta.io" role="button">Explore the API</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item item-6">
-          <img src="/assets/images/slide-03.jpg" alt="Slide 6">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Partition alerts by customer.</h1>
-              <hr></hr>
-              <p>Manage multiple customers using a single instance of Alerta
-                via <a href="http://docs.alerta.io/en/latest/customerviews.html">customer views.</a>
-                Customers can only see and action their own alerts. An admin
-                user can see alerts from all customers.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://docs.alerta.io/en/latest/customerviews.html" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
+          {% endfor %}
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
