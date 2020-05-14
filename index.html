@@ -1,35 +1,5 @@
 ---
-layout: carousel
-title: alerta
+layout: default
 ---
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-      </ol>
-      <div class="carousel-inner">
-        {% for slide in site.data.slides %}
-        <div class="item item-{{ forloop.index }} {% if forloop.first == true %}active{% endif %}">
-            <img src="/assets/images/slide-0{{ forloop.index }}.jpg" alt="Slide {{ forloop.index }}">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>{{ slide.title }}</h1>
-                <hr></hr>
-                <p>{{ slide.text }}</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ slide.button.url }}" role="button">{{ slide.button.text }}</a></p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+{% include carousel.html %}
