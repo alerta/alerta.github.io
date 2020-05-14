@@ -3,3 +3,7 @@
   font-family: "Sonsie One", cursive;
   font-size: 26px;
 }
+
+.nav a{
+  font-size: 18px !important;
+  }
