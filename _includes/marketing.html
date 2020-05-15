@@ -7,7 +7,7 @@
           <i class="fa {{ blurb.icon }} fa-5x img-circle"></i>
           <h2>{{ blurb.title }}</h2>
           <p class="lead">{{ blurb.text }}</p>
-          <p><a class="btn btn-default" href="{{ blurb.button.url }}" role="button">{{ blurb.button.text }}</a></p>
+          <p><a class="btn btn-default" href="{{ blurb.button.url }}" onclick="ga('send', 'event', 'Outbound Link', '{{ blurb.title }}', event.target.href)" role="button">{{ blurb.button.text }}</a></p>
         </div><!-- /.col-lg-4 -->
         {% endfor %}
       </div><!-- /.row -->

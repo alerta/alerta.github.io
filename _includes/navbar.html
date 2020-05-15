@@ -15,13 +15,13 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="https://alerta.io">Home</a></li>
-            <li><a href="http://docs.alerta.io">Documentation</a></li>
+            <li><a href="http://docs.alerta.io" onclick="ga('send', 'event', 'Outbound Link', 'docs', event.target.href)">Documentation</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="http://docs.alerta.io/en/latest/server.html">Alerta API</a></li>
-                <li><a href="https://github.com/alerta/alerta-webui">Web UI</a></li>
-                <li><a href="https://github.com/alerta/python-alerta">CLI &amp; Python SDK</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/server.html" onclick="ga('send', 'event', 'Outbound Link', 'API', event.target.href)">Alerta API</a></li>
+                <li><a href="https://github.com/alerta/alerta-webui" onclick="ga('send', 'event', 'Outbound Link', 'WebUI', event.target.href)">Web UI</a></li>
+                <li><a href="https://github.com/alerta/python-alerta" onclick="ga('send', 'event', 'Outbound Link', 'CLI', event.target.href)">CLI &amp; Python SDK</a></li>
               </ul>
             </li>
 
@@ -29,52 +29,52 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-header">External</li>
-                <li><a href="https://github.com/alerta/nagios-alerta">Nagios</a></li>
-                <li><a href="https://github.com/alerta/zabbix-alerta">Zabbix</a></li>
-                <li><a href="https://github.com/alerta/riemann-alerta">Riemann</a></li>
-                <li><a href="https://github.com/alerta/sensu-alerta">Sensu</a></li>
-                <li><a href="https://github.com/alerta/kibana-alerta">Kibana</a></li>
-                <li><a href="https://github.com/netdata/netdata/tree/master/health/notifications/alerta">netdata</a></li>
-                <li><a href="https://github.com/alerta/prometheus-config">Prometheus</a></li>
-                <li><a href="https://docs.influxdata.com/kapacitor/latest/nodes/alert_node/#alerta">InfluxDB Kapacitor</a></li>
-                <li><a href="https://elastalert.readthedocs.io/en/latest/ruletypes.html#alerta">ElastAlert</a></li>
+                <li><a href="https://github.com/alerta/nagios-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Nagios', event.target.href)">Nagios</a></li>
+                <li><a href="https://github.com/alerta/zabbix-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Zabbix', event.target.href)">Zabbix</a></li>
+                <li><a href="https://github.com/alerta/riemann-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Riemann', event.target.href)">Riemann</a></li>
+                <li><a href="https://github.com/alerta/sensu-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Sensu', event.target.href)">Sensu</a></li>
+                <li><a href="https://github.com/alerta/kibana-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Kibana', event.target.href)">Kibana</a></li>
+                <li><a href="https://github.com/netdata/netdata/tree/master/health/notifications/alerta onclick="ga('send', 'event', 'Outbound Link', 'netdata', event.target.href)"">netdata</a></li>
+                <li><a href="https://github.com/alerta/prometheus-config" onclick="ga('send', 'event', 'Outbound Link', 'Prometheus', event.target.href)">Prometheus</a></li>
+                <li><a href="https://docs.influxdata.com/kapacitor/latest/nodes/alert_node/#alerta" onclick="ga('send', 'event', 'Outbound Link', 'InfluxDB', event.target.href)">InfluxDB Kapacitor</a></li>
+                <li><a href="https://elastalert.readthedocs.io/en/latest/ruletypes.html#alerta" onclick="ga('send', 'event', 'Outbound Link', 'ElastAlert', event.target.href)">ElastAlert</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Webhooks</li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#cloudwatch">AWS Cloudwatch</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#grafana">Grafana</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#graylog">Graylog</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#newrelic">New Relic</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#pagerduty">PagerDuty</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#pingdom">Pingdom</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#prometheus">Prometheus</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#riemann">Riemann</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#serverdensity">SeverDensity</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#slack">Slack</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#stackdriver">Google Stackdriver</a></li>
-                <li><a href="http://docs.alerta.io/en/latest/integrations.html#telegram">Telegram</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#cloudwatch" onclick="ga('send', 'event', 'Outbound Link', 'Cloudwatch', event.target.href)">AWS Cloudwatch</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#grafana" onclick="ga('send', 'event', 'Outbound Link', 'Grafana', event.target.href)">Grafana</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#graylog" onclick="ga('send', 'event', 'Outbound Link', 'Graylog', event.target.href)">Graylog</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#newrelic onclick="ga('send', 'event', 'Outbound Link', 'NewRelic', event.target.href)"">New Relic</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#pagerduty" onclick="ga('send', 'event', 'Outbound Link', 'PagerDuty', event.target.href)">PagerDuty</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#pingdom" onclick="ga('send', 'event', 'Outbound Link', 'Pingdom', event.target.href)">Pingdom</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#prometheus" onclick="ga('send', 'event', 'Outbound Link', 'Prometheus', event.target.href)">Prometheus</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#riemann" onclick="ga('send', 'event', 'Outbound Link', 'Riemann', event.target.href)">Riemann</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#serverdensity" onclick="ga('send', 'event', 'Outbound Link', 'ServerDensity', event.target.href)">SeverDensity</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#slack" onclick="ga('send', 'event', 'Outbound Link', 'Slack', event.target.href)">Slack</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#stackdriver" onclick="ga('send', 'event', 'Outbound Link', 'Stackdriver', event.target.href)">Google Stackdriver</a></li>
+                <li><a href="http://docs.alerta.io/en/latest/integrations.html#telegram" onclick="ga('send', 'event', 'Outbound Link', 'Telegram', event.target.href)">Telegram</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Plugins</li>
-                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/amqp">AMQP</a></li>
-                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/prometheus">Prometheus Alertmanager</a></li>
-                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/slack">Slack</a></li>
-                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/telegram">Telegram</a></li>
+                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/amqp" onclick="ga('send', 'event', 'Outbound Link', 'Plugin AMQP', event.target.href)">AMQP</a></li>
+                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/prometheus" onclick="ga('send', 'event', 'Outbound Link', 'Plugin Prometheus', event.target.href)">Prometheus Alertmanager</a></li>
+                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/slack" onclick="ga('send', 'event', 'Outbound Link', 'Plugin Slack', event.target.href)">Slack</a></li>
+                <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins/telegram" onclick="ga('send', 'event', 'Outbound Link', 'Plugin Telegram', event.target.href)">Telegram</a></li>
                 <li><a href="https://github.com/alerta/alerta-contrib/tree/master/plugins">More...</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deploy <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://github.com/alerta/alerta-cloudformation">AWS Cloudformation</a></li>
-                <li><a href="https://github.com/alerta/gcloud-api-alerta">Google Cloud</a></li>
-                <li><a href="https://registry.hub.docker.com/u/alerta/alerta-web/">Docker</a></li>
-                <li><a href="https://github.com/alerta/packer-templates">Packer</a></li>
-                <li><a href="https://github.com/alerta/heroku-api-alerta">Heroku</a></li>
-                <li><a href="https://pypi.python.org/pypi/alerta-server">Python PyPI</a></li>
-                <li><a href="https://github.com/alerta/vagrant-try-alerta">Vagrant</a></li>
+                <li><a href="https://github.com/alerta/alerta-cloudformation" onclick="ga('send', 'event', 'Outbound Link', 'AWS', event.target.href)">AWS Cloudformation</a></li>
+                <li><a href="https://github.com/alerta/gcloud-api-alerta" onclick="ga('send', 'event', 'Outbound Link', 'GCP', event.target.href)">Google Cloud</a></li>
+                <li><a href="https://registry.hub.docker.com/u/alerta/alerta-web/" onclick="ga('send', 'event', 'Outbound Link', 'Docker', event.target.href)">Docker</a></li>
+                <li><a href="https://github.com/alerta/packer-templates" onclick="ga('send', 'event', 'Outbound Link', 'Packer', event.target.href)">Packer</a></li>
+                <li><a href="https://github.com/alerta/heroku-api-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Heroku', event.target.href)">Heroku</a></li>
+                <li><a href="https://pypi.python.org/pypi/alerta-server" onclick="ga('send', 'event', 'Outbound Link', 'PyPI', event.target.href)">Python PyPI</a></li>
+                <li><a href="https://github.com/alerta/vagrant-try-alerta" onclick="ga('send', 'event', 'Outbound Link', 'Vagrant', event.target.href)">Vagrant</a></li>
               </ul>
             </li>
 
-            <li><a href="http://github.com/alerta/alerta">GitHub</a></li>
+            <li><a href="http://github.com/alerta/alerta" onclick="ga('send', 'event', 'Outbound Link', 'GitHub', event.target.href)">GitHub</a></li>
           </ul>
         </div>
       </div>

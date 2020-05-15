@@ -21,7 +21,7 @@
                 <h1>{{ slide.title }}</h1>
                 <hr></hr>
                 <p>{{ slide.text }}</p>
-                <p><a class="btn btn-lg btn-primary" href="{{ slide.button.url }}" role="button">{{ slide.button.text }}</a></p>
+                <p><a class="btn btn-lg btn-primary" href="{{ slide.button.url }}" onclick="ga('send', 'event', 'Outbound Link', '{{ slide.title }}', event.target.href)" role="button">{{ slide.button.text }}</a></p>
               </div>
             </div>
           </div>
