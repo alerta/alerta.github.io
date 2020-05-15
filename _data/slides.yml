@@ -40,7 +40,7 @@
     reliable ways to get going quickly. Easy to configure, it can
     be used in simple and complex environments.
   button:
-    text: Docker Deploy »
+    text: Docker Deploy &raquo;
     url: https://hub.docker.com/r/alerta/alerta-web/
 
 - title: Explore the Alerta API.
