@@ -1,0 +1,26 @@
+- title: All the alerts. <span class="text-muted">Not just the easy ones.</span>
+  text: >
+    Alerta accepts alerts from the standard sources like Syslog,
+    SNMP, Prometheus, Nagios, Zabbix, Sensu and netdata. Any monitoring
+    tool that can trigger a URL request can be integrated easily. Anything
+    that can be scripted can also send alerts using the command-line tool.
+    There is already a Python SDK and other SDKs are in the pipeline. Cool.
+  image: /assets/images/console-004.png
+
+- title: Flexible alert format. <span class="text-muted">Capture what's important to you.</span>
+  text: >
+    Most other monitoring tools enforce their view of
+    the world on you. Not with Alerta. You are free to send any alert
+    with any value. A single alert could be associated with multiple
+    services, have any number of 'tags' in any format, and any number
+    of custom attributes are allowed. Nice.
+  image: /assets/images/console-003.png
+
+- title: De-duplication and simple correlation. <span class="text-muted">Out of the box.</span>
+  text: >
+    When receiving alerts from multiple sources you can
+    quickly become overwhelmed. With Alerta any alert with the same
+    environment and resource is considered a duplicate if it has the
+    same severity. If it has a different severity it is correlated so
+    that you only see the most recent one. Awesome.
+  image: /assets/images/console-002.png
