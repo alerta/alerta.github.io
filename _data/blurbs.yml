@@ -10,7 +10,7 @@
     using the API or command-line tool.
   button:
     text: Try it now &raquo;
-    url: http://try.alerta.io
+    url: https://try.alerta.io
 
 - title: Alert API
   icon: fa-wrench
@@ -22,7 +22,7 @@
     using API keys.
   button:
     text: API Explorer &raquo;
-    url: http://explorer.alerta.io
+    url: https://explorer.alerta.io
 
 - title: Deploy It!
   icon: fa-download
@@ -33,5 +33,5 @@
     techniques.
   button:
     text: Learn more &raquo;
-    url: http://docs.alerta.io
+    url: https://docs.alerta.io
 

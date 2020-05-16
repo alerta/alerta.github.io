@@ -17,7 +17,7 @@
     Telegram now includes two-way alert acknowledgement.
   button:
     text: Try it now
-    url: http://try.alerta.io
+    url: https://try.alerta.io
 
 - title: Keep track of individual alerts.
   text: >
@@ -26,12 +26,12 @@
     possible there is built-in support for OAuth, SAML2 and LDAP user logins using
     <a href="https://developers.google.com/identity/protocols/OpenIDConnect">Google</a>,
     <a href="https://developer.github.com/v3/oauth/">GitHub</a>,
-    <a href="http://doc.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> and
+    <a href="https://docs.gitlab.com/ce/integration/oauth_provider.html">GitLab</a> and
     <a href="https://keycloak.gitbooks.io/documentation/authorization_services/index.html">Keycloak</a>
     as well as Basic Auth for situations where OAuth isn't available.
   button:
     text: Learn more
-    url: http://docs.alerta.io/en/latest/release-notes.html
+    url: https://docs.alerta.io/en/latest/release-notes.html
 
 - title: Deploy using Docker.
   text: >
@@ -49,21 +49,21 @@
     most important features of the Alerta API -- sending and
     querying for alerts. Any alerts sent to the API using the
     explorer can be viewed in the explorer or the
-    <a href="http://try.alerta.io/">web console</a> available
+    <a href="https://try.alerta.io/">web console</a> available
     online.
   button:
     text: Explore the API
-    url: http://explorer.alerta.io
+    url: https://explorer.alerta.io
 
 - title: Partition alerts by customer.
   text: >
     Manage multiple customers using a single instance of Alerta
-    via <a href="http://docs.alerta.io/en/latest/customerviews.html">customer views.</a>
+    via <a href="https://docs.alerta.io/en/latest/customerviews.html">customer views.</a>
     Customers can only see and action their own alerts. An admin
     user can see alerts from all customers.
   button:
     text: Learn more
-    url: http://docs.alerta.io/en/latest/customerviews.html
+    url: https://docs.alerta.io/en/latest/customerviews.html
 
 # - title:
 #   text: >
